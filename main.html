@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css border maker</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X3Q1X614MD"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-X3Q1X614MD');
+	</script>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="logo_head">
+		<a href="https://twitter.com/AbbyPTsai">
+            FeedBack
+        </a>
+	</div>
+    <div id="card">
+		<div id="mainlogo"><img src="img/abby.png" alt="" height="50" width="65"></div>	
+		<h1>BALL shape</h1>
+        <h6>border visual tool</h6>
+        <h2>we can make it esaily!</h2>		
+		<h5>
+            <div class="colorarea">
+                <div class="colorinput">
+                    <label>1. select graident color:</label>
+                    <input type="color" value="#ffc0cb" id="color_1" oninput="colorchange(this)">
+                </div>
+                <div class="colorinput">
+                    <input type="color" value="#30d9c5" id="color_2" oninput="colorchange(this)">
+                </div>
+            </div>
+			2. silde the angles.<br>
+			2. click copy, paste then to CSS.<br> 
+		</h5>
+	</div> 
+
+	<div class="sliderarea">	
+		<div class="sliderinput">
+			<input type="range" min="0" max="100" value="0" id="leftop_h" class="slider" oninput=change(this)>
+			<span id="leftop_h_value">0</span>		
+		</div>
+		<div class="sliderinput">
+			<input type="range" min="0" max="100" value="0" id="rightop_h" class="slider" oninput=change(this)>
+			<span id="rightop_h_value">0</span>	
+		</div>
+		<div class="sliderinput">
+			<input type="range" min="0" max="100" value="0" id="rightbottom_h" class="slider" oninput=change(this)>
+			<span id="rightbottom_h_value" >0</span>	
+		</div>
+		<div class="sliderinput">
+			<input type="range" min="0" max="100" value="0" id="leftbottom_h" class="slider" oninput=change(this)>
+			<span id="leftbottom_h_value">0</span>	
+		</div>
+		<div class="sliderinput">
+			<input type="range" min="0" max="100" value="0" id="leftop_v" class="slider" oninput=change(this)>
+			<span id="leftop_v_value">0</span>	
+		</div>
+		<div class="sliderinput">
+			<input type="range" min="0" max="100" value="0" id="rightop_v" class="slider" oninput=change(this)>
+			<span id="rightop_v_value">0</span>	
+		</div>
+		<div class="sliderinput">
+			<input type="range" min="0" max="100" value="0" id="rightbottom_v" class="slider" oninput=change(this)>
+			<span id="rightbottom_v_value">0</span>	
+		</div>
+			<div class="sliderinput">
+			<input type="range" min="0" max="100" value="0" id="leftbottom_v" class="slider" oninput=change(this)>
+			<span id="leftbottom_v_value">0</span>	
+		</div>
+		<div id="outside">
+		<div id="picture"></div>
+		<div id="copybutton_1" onclick="copy(this)">copy</div>
+		</div>		
+	</div>
+
+	<div class="footer">copyright 2022 @AbbyTsai - made with Thanks!</div>
+    <script src="main.js"></script>
+</body>
+</html>
