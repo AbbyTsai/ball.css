@@ -40,8 +40,12 @@ function copy(){
     textarea.remove();
     console.log(borderStyle+gradient);
     document.getElementById('picture').style.borderRadius=borderStyle;
-    document.getElementById('picture').style.animation='copied 0.2s 2';
-    document.getElementById('copybutton_1').style.background='pink';
+    document.getElementById('picture').style.animation='copied 0.1s 2';
+    if (copybutton_1.style.background==='lightpink'){
+        copybutton_1.style.background='hotpink';
+    } else {
+        copybutton_1.style.background='lightpink';
+    }
 }
 
 function updateinput(e){
