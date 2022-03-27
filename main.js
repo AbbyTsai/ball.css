@@ -10,8 +10,8 @@ var data={
     'color_1':'#ffc0cb',
     'color_2':'#30d9c5'
 };
-
-var borderStyle='border-radius:'+data['leftop_h']+'% '+data['rightop_h']+'% '+data['rightbottom_h']+'% '+data['leftbottom_h']+'% / '+data['leftop_v']+'% '+data['rightop_v']+'% '+data['rightbottom_v']+'% '+data['leftbottom_v']+'%;';
+var size='width:300px; height:300px;'
+var borderStyle=' border-radius:'+data['leftop_h']+'% '+data['rightop_h']+'% '+data['rightbottom_h']+'% '+data['leftbottom_h']+'% / '+data['leftop_v']+'% '+data['rightop_v']+'% '+data['rightbottom_v']+'% '+data['leftbottom_v']+'%;';
 var gradient=' background: linear-gradient(0.3turn,'+data['color_1']+', '+data['color_2']+');';
 document.getElementById("picture").style=borderStyle+gradient;
 
@@ -34,11 +34,11 @@ var copybutton_1=document.getElementById('copybutton_1');
 
 function copy(){
     textarea=document.createElement("textarea");
-    textarea.value=borderStyle+gradient;
+    textarea.value=size+borderStyle+gradient;
     textarea.select();
     navigator.clipboard.writeText(textarea.value);
     textarea.remove();
-    console.log(borderStyle+gradient);
+    console.log(size+borderStyle+gradient);
     document.getElementById('picture').style.borderRadius=borderStyle;
     document.getElementById('picture').style.animation='copied 0.1s 2';
     if (copybutton_1.style.background==='lightpink'){
