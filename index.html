@@ -19,8 +19,8 @@
 <body>
     <div class="logo_head">
 		<a href="https://twitter.com/AbbyPTsai">
-            FeedBack
-        </a>
+			FeedBack
+		</a>
 	</div>
     <div id="card">
 		<div id="mainlogo"><img src="img/abby.png" alt="" height="50" width="65"></div>	
@@ -28,21 +28,12 @@
         <h6>visual corner tool</h6>
         <h2>we can make it esaily!</h2>		
 		<h5>
-            <div class="colorarea">
-                <div class="colorinput">
-                    <label>1. select graident color:</label>
-                    <input type="color" value="#ffc0cb" id="color_1" oninput="colorchange(this)">
-                </div>
-                <div class="colorinput">
-                    <input type="color" value="#30d9c5" id="color_2" oninput="colorchange(this)">
-                </div>
-            </div>
-			2. slide the angles.<br>
-			3. click copy, paste then to CSS.<br> 
+			1. slide the angles.<br>
+			2. click copy, paste then to CSS.<br> 
 		</h5>
 	</div> 
 
-	<div class="sliderarea">	
+	<div id="sliderarea">	
 		<div class="sliderinput">
 			<input type="range" min="0" max="100" value="0" id="leftop_h" class="slider" oninput=change(this)>
 			<span id="leftop_h_value">0</span>		
@@ -80,8 +71,29 @@
 		<div id="copybutton_1" onclick="copy(this)">copy</div>
 		</div>		
 	</div>
-
-	<div class="footer">copyright 2022 @AbbyTsai - made with Thanks!</div>
+	<div id="sampletext">"click" to copy example</div>
+	<div id="samplearea">
+		<div class="sample"></div>
+		<div class="sample"></div>
+		<div class="sample"></div>
+		<div class="sample"></div>
+		<div class="sample"></div>
+		<div class="sample"></div>
+		<div class="sample"></div>
+		<div class="sample"></div>
+		<div class="sample"></div>
+		<div class="sample"></div>
+		<div class="sample"></div>
+		<div class="sample"></div>
+		<div class="sample"></div>
+		<div class="sample"></div>
+		<div class="sample"></div>
+		<div class="sample"></div>
+		<div class="sample"></div>
+		
+	</div>
+	<div>Inspired by <a href="https://www.conic.style/">conic.css.</a> Huge thanks.</div>
+	<div class="footer">copyright 2022 @AbbyTsai</div>
     <script src="main.js"></script>
 </body>
 </html>
