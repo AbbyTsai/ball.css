@@ -25,7 +25,6 @@ var copybutton_1=document.getElementById('copybutton_1');
 
 function copy(e){
     textarea=document.createElement("textarea");
-    //textarea.value=size+borderStyle+gradient;
     textarea.value=borderStyle;
     textarea.select();
     navigator.clipboard.writeText(textarea.value);
@@ -54,7 +53,8 @@ var radius=[
 ];
 
 var colors=['hotpink','#ffeb3b','#bb8c64','lightcyan','lightgray','lightskyblue','pink','lightgreen'];
-var radius5=[0, 0, 0, 0, 0, 0, 0, 0];
+//var radius_single=[0, 0, 0, 0, 0, 0, 0, 0];
+
 randomnumber();
 
 for (let i=0; i<colors.length; i++){
@@ -81,7 +81,7 @@ for (let count=0; count<radius.length;count++){
     function(event){
     sampleradius=document.getElementById('samplearea').children[count].children[0].style.borderRadius;
     textarea=document.createElement("textarea");
-    textarea.value=sampleradius;
+    textarea.value='border-radius:'+sampleradius+';';
     textarea.select();
     navigator.clipboard.writeText(textarea.value);
     textarea.remove();

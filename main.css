@@ -5,7 +5,7 @@
 }
 
 h1{
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Lobster', cursive;
     font-size: 72px;
     font-weight: bolder;
 }
@@ -159,8 +159,8 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 430px;
-    font-family: 'Permanent Marker', cursive;
+    top: 360px;
+    font-family: 'Lobster', cursive;
 }
 
 #card {
@@ -198,8 +198,17 @@ h1{
     width: 100vw;
     grid-template-rows: repeat(auto-fit,calc(100vh/5));
 }
+#mainlogo{
+    position: relative;
+}
+#mainlogo img{
+    position:absolute;
+    right: -50px;
+    top: 45px;
+}
 #sampletext{
     margin-top:5em;
+    font-family: 'Lobster', cursive;
 }
 .sample {
     display: flex;
@@ -212,16 +221,14 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Lobster', cursive;
 }
 
 @media screen and (max-width:480px){
     .sliderinput:nth-child(-n+4) .slider {
         width:80px;
     }
-    #copybutton_1 {
-        top: 530px;
-    }
+  
     #samplearea {
         grid-template-rows: repeat(auto-fit,calc(100vh/9));
     }
