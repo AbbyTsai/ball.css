@@ -98,10 +98,10 @@ h1{
 }
 
 .sliderinput:nth-child(3) {
-      grid-area:bottom-2 ;
-      justify-content: flex-end;
-      align-items: flex-start;
-      flex-direction: row-reverse;
+    grid-area:bottom-2 ;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: row-reverse;
 }
 .sliderinput:nth-child(4) {
     grid-area: bottom-1;
@@ -110,38 +110,38 @@ h1{
 }
 
 .sliderinput:nth-child(5) {
-      grid-area: center;
-      transform: rotate(90deg);
-      left: -100px;
-      top:0px;
-      position: relative;
-      height:100px;
+    grid-area: center;
+    transform: rotate(90deg);
+    left: -100px;
+    top:0px;
+    position: relative;
+    height:100px;
     width:100px;
 }
 
 .sliderinput:nth-child(8) {
-      grid-area: center;
-      transform: rotate(90deg);
-      left: -100px;
-      top: 195px;
-      position: relative;
-      height:100px;
+    grid-area: center;
+    transform: rotate(90deg);
+    left: -100px;
+    top: 195px;
+    position: relative;
+    height:100px;
     width:100px;
 }
 
 .sliderinput:nth-child(6) {
-      grid-area:right-1;
-      transform: rotate(90deg);
-      justify-content: flex-start;
-      align-items: flex-end;
-      height:100px;
+    grid-area:right-1;
+    transform: rotate(90deg);
+    justify-content: flex-start;
+    align-items: flex-end;
+    height:100px;
     width:100px;
 }
 .sliderinput:nth-child(7) {
-      grid-area:right-2;
-      transform: rotate(90deg);
-      top: 50px;
-       position: relative;
+    grid-area:right-2;
+    transform: rotate(90deg);
+    top: 50px;
+    position: relative;
     align-items: flex-end;
     height:100px;
     width:100px;
@@ -222,6 +222,13 @@ h1{
     align-items: center;
     justify-content: center;
     font-family: 'Lobster', cursive;
+}
+svg{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    bottom: -50%;
+    right: -46%;
 }
 
 @media screen and (max-width:480px){
