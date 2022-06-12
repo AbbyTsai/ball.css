@@ -102,6 +102,7 @@ function frame(){
      else  {
          radiuschange='border-radius:'+radius[step][0]+'% '+radius[step][1]+'% '+radius[step][2]+'% '+radius[step][3]+'% / '+radius[step][4]+'% '+radius[step][5]+'% '+radius[step][6]+'% '+radius[step][7]+'%;';
          document.getElementById("picture").style=radiuschange;
+         document.getElementById("copybutton_1").style=radiuschange;
          document.getElementById('leftop_h_value').innerHTML=radius[step][0];
          document.getElementById('rightop_h_value').innerHTML=radius[step][1];
          document.getElementById('rightbottom_h_value').innerHTML=radius[step][2];
